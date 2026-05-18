@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nutri Thyara Iasniny | Emagrecimento e Performance</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:'Plus Jakarta Sans', sans-serif; background:#f8fafc; color:#0f172a; overflow-x:hidden; }
+    
+    .hero-bg {
+      background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.7)), 
+                  url('/img/hero_nutri.webp');
+      background-size: cover; background-position: center;
+    }
+
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.8); }
+    
+    .btn-pulse { animation: pulse 2s infinite; }
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+      70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+
+    #mobile-menu { transition: 0.3s ease-in-out; transform-origin: top; }
+  </style>
+</head>
+<body>
+
+  <header class="fixed top-0 w-full z-50 glass border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="font-extrabold text-2xl tracking-tighter text-emerald-600 uppercase">
+        Nutri <span class="text-slate-900">Thyara</span>
+      </div>
+
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="#metodo" class="font-semibold hover:text-emerald-600 transition">O Método</a>
+        <a href="#especialidades" class="font-semibold hover:text-emerald-600 transition">Especialidades</a>
+        <a href="#sobre" class="font-semibold hover:text-emerald-600 transition">Sobre</a>
+        <a href="https://wa.me/5577991501382" target="_blank" class="bg-emerald-600 text-white px-6 py-2.5 rounded-full font-bold hover:bg-emerald-700 transition shadow-lg">
+          Agendar Consulta
+        </a>
+      </nav>
+
+      <button id="menu-toggle" class="lg:hidden text-slate-900"><i data-lucide="menu" class="w-8 h-8"></i></button>
+    </div>
+
+    <div id="mobile-menu" class="hidden absolute top-20 left-0 w-full bg-white border-b border-slate-200 flex-col p-6 gap-4 lg:hidden">
+      <a href="#metodo" class="mobile-link font-bold py-2">O Método</a>
+      <a href="#especialidades" class="mobile-link font-bold py-2">Especialidades</a>
+      <a href="#sobre" class="mobile-link font-bold py-2">Sobre</a>
+      <a href="https://wa.me/5577991501382" class="bg-emerald-600 text-white py-4 rounded-xl text-center font-bold">Agendar Agora</a>
+    </div>
+  </header>
+
+  <section class="hero-bg min-h-screen flex items-center pt-24">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 items-center gap-12">
+      <div>
+        <span class="bg-emerald-100 text-emerald-700 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest mb-6 inline-block">
+          Saúde • Performance • Estética
+        </span>
+        <h1 class="text-4xl lg:text-7xl font-extrabold leading-tight text-slate-900 mb-6">
+          Comer bem não deve ser <span class="text-emerald-600 underline">um sacrifício.</span>
+        </h1>
+        <p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-lg">
+          Nutrição clínica e esportiva focada em resultados reais através de um plano <strong>flexível e personalizado</strong> para a sua rotina e objetivos.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="https://wa.me/5577991501382" target="_blank" class="btn-pulse bg-emerald-600 text-white px-10 py-5 rounded-2xl font-black text-center text-lg shadow-xl hover:bg-emerald-700 transition">
+            Iniciar minha transformação
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white" id="metodo">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl lg:text-5xl font-extrabold text-slate-900 mb-4">Você se sente preso nesse ciclo?</h2>
+        <p class="text-slate-500">Dietas restritivas são o maior inimigo do seu corpo a longo prazo.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-6"><i data-lucide="frown"></i></div>
+          <h3 class="text-xl font-bold mb-4">Efeito Sanfona</h3>
+          <p class="text-slate-600">Cansado de perder peso e ganhar tudo de novo por não conseguir sustentar uma dieta de fome.</p>
+        </div>
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-6"><i data-lucide="battery-low"></i></div>
+          <h3 class="text-xl font-bold mb-4">Falta de Energia</h3>
+          <p class="text-slate-600">Treinar sem o combustível certo te deixa exausto e impede o ganho de massa muscular (hipertrofia).</p>
+        </div>
+        <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100">
+          <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center mb-6"><i data-lucide="ban"></i></div>
+          <h3 class="text-xl font-bold mb-4">Isolamento Social</h3>
+          <p class="text-slate-600">Medo de sair com amigos ou família porque a dieta "não permite" comer nada do que você gosta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-slate-50" id="especialidades">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid lg:grid-cols-3 gap-8">
+        <div class="bg-white p-10 rounded-[40px] shadow-sm border border-slate-200 text-center">
+          <i data-lucide="target" class="w-12 h-12 text-emerald-600 mx-auto mb-6"></i>
+          <h3 class="text-2xl font-black mb-4">Emagrecimento</h3>
+          <p class="text-slate-500">Queima de gordura preservando sua saúde mental e disposição.</p>
+        </div>
+        <div class="bg-white p-10 rounded-[40px] shadow-sm border border-slate-200 text-center">
+          <i data-lucide="dumbbell" class="w-12 h-12 text-emerald-600 mx-auto mb-6"></i>
+          <h3 class="text-2xl font-black mb-4">Hipertrofia</h3>
+          <p class="text-slate-500">Ganho de massa muscular com base em ciência e nutrição esportiva.</p>
+        </div>
+        <div class="bg-white p-10 rounded-[40px] shadow-sm border border-slate-200 text-center">
+          <i data-lucide="zap" class="w-12 h-12 text-emerald-600 mx-auto mb-6"></i>
+          <h3 class="text-2xl font-black mb-4">Performance</h3>
+          <p class="text-slate-500">Leve seus treinos ao próximo nível com a energia que seu corpo pede.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white" id="sobre">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="relative">
+        <div class="absolute -inset-4 bg-emerald-100 rounded-[3rem] -z-10"></div>
+        <img src="/img/thyara.webp" alt="Thyara Iasniny" class="rounded-[3rem] w-full aspect-square object-cover shadow-2xl bg-slate-200"
+             onerror="this.src='https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1374&auto=format&fit=crop';">
+      </div>
+      <div>
+        <h2 class="text-3xl lg:text-5xl font-extrabold mb-8 text-slate-900">Thyara Iasniny</h2>
+        <div class="space-y-6 text-slate-600 text-lg leading-relaxed">
+          <p>Nutricionista Clínica e Esportiva, focada em transformar não apenas o corpo, mas a relação dos meus pacientes com a comida.</p>
+          <p>Acredito que a nutrição de verdade é aquela que se adapta à sua vida, e não o contrário. Meus protocolos são baseados em ciência e <strong>flexibilidade alimentar</strong>.</p>
+          <div class="flex flex-col gap-4 mt-8">
+            <div class="flex items-center gap-4"><i data-lucide="map-pin" class="text-emerald-600"></i><span>Atendimento Presencial em Vitória da Conquista-BA</span></div>
+            <div class="flex items-center gap-4"><i data-lucide="globe" class="text-emerald-600"></i><span>Consultoria Online para todo o Brasil</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-slate-900 text-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl lg:text-6xl font-extrabold mb-8">Vamos dar o primeiro passo hoje?</h2>
+      <p class="text-slate-400 text-xl mb-12 leading-relaxed">O corpo que você deseja e a mente que você precisa começam no seu próximo prato.</p>
+      <a href="https://wa.me/5577991501382" target="_blank" class="btn-pulse inline-flex items-center gap-3 bg-emerald-600 text-white px-12 py-6 rounded-2xl font-black text-xl hover:bg-emerald-700 transition shadow-2xl shadow-emerald-900/40">
+        <i data-lucide="message-circle"></i> Agendar minha consulta
+      </a>
+    </div>
+  </section>
+
+  <footer class="py-10 bg-white border-t border-slate-200 text-center text-slate-400 text-sm">
+    <p>© 2026 Thyara Iasniny — Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    
+    // Logic for Mobile Menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
